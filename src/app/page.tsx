@@ -9,7 +9,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-export function AccordionDemo() {
+export function accordionFunction() {
   return (
     <Accordion type="single" collapsible className="w-full">
       <AccordionItem value="item-1">
