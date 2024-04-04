@@ -1,39 +1,8 @@
-import React from 'react';
+import react from 'react'
 import { Button } from "@/components/ui/button";
 import downImgTwo from "@/images/down-img-two.png";
+import Accordion from "@/app/accordion";
 import "./style.css";
-import "pages/accordion.tsx"
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-
-export function AccordionDemo() {
-  return (
-    <Accordion type="single" collapsible className="w-full">
-      <AccordionItem value="item-1">
-        <AccordionTrigger>Is it accessible?</AccordionTrigger>
-        <AccordionContent>
-          Yes. It adheres to the WAI-ARIA design pattern.
-        </AccordionContent>
-      </AccordionItem>
-      <AccordionItem value="item-2">
-        <AccordionTrigger>Is it styled?</AccordionTrigger>
-        <AccordionContent>
-          Yes. It comes with default styles that match the other components' aesthetic.
-        </AccordionContent>
-      </AccordionItem>
-      <AccordionItem value="item-3">
-        <AccordionTrigger>Is it animated?</AccordionTrigger>
-        <AccordionContent>
-          Yes. It's animated by default, but you can disable it if you prefer.
-        </AccordionContent>
-      </AccordionItem>
-    </Accordion>
-  );
-}
 
 
 export default function Home() {
@@ -147,62 +116,7 @@ export default function Home() {
       </div>
       <div>
         <div>
-          <Accordion type="single" collapsible className="accordion-wrapper">
-            <AccordionItem value="item-1">
-              <AccordionTrigger className="accordion-project-name">
-                Project name
-              </AccordionTrigger>
-              <AccordionContent className="accordion-p-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                auctor egestas urna sit amet euismod. Donec consequat lorem at
-                elit sagittis interdum.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                auctor egestas urna sit amet euismod. Donec consequat lorem at
-                elit sagittis interdum.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                auctor egestas urna sit amet euismod. Donec consequat lorem at
-                elit sagittis interdum.
-                <br />
-                <Button variant="outline" className="my-6">View</Button>
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-2">
-              <AccordionTrigger className="accordion-project-name">
-                Project name
-              </AccordionTrigger>
-              <AccordionContent className="accordion-p-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                auctor egestas urna sit amet euismod. Donec consequat lorem at
-                elit sagittis interdum.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                auctor egestas urna sit amet euismod. Donec consequat lorem at
-                elit sagittis interdum.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                auctor egestas urna sit amet euismod. Donec consequat lorem at
-                elit sagittis interdum.
-                <br />
-                <Button variant="outline" className="my-6">View</Button>
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-3">
-              <AccordionTrigger className="accordion-project-name">
-                Project name
-              </AccordionTrigger>
-              <AccordionContent className="accordion-p-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                auctor egestas urna sit amet euismod. Donec consequat lorem at
-                elit sagittis interdum.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                auctor egestas urna sit amet euismod. Donec consequat lorem at
-                elit sagittis interdum.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                auctor egestas urna sit amet euismod. Donec consequat lorem at
-                elit sagittis interdum.
-                <br />
-                <Button variant="outline" className="my-6">View</Button>
-              </AccordionContent>
-            </AccordionItem>
-          </Accordion>
+          <Accordion />
         </div>
       </div>
     </main>
