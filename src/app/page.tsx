@@ -2,6 +2,7 @@ import React from 'react';
 import { Button } from "@/components/ui/button";
 import downImgTwo from "@/images/down-img-two.png";
 import "./style.css";
+import "pages/accordion.tsx"
 import {
   Accordion,
   AccordionContent,
