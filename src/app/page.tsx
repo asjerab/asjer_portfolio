@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import downImg from "@/images/down-img.png";
+import downImgTwo from "@/images/down-img-two.png";
 import "./style.css";
 import {
   Accordion,
@@ -43,9 +43,14 @@ export default function Home() {
           asjer bereket
         </h1>
         <div className="links-nav bauziet-regular text-lg flex gap-5">
-          <a href="#">Work</a>
-          <a href="#">About</a>
-          <a href="#">Contact</a>
+          <a className="transform translate-y-0 hover:-translate-y-1 transition-all delay-300ms" href="#work-link">Work</a>
+          <a className="transform translate-y-0 hover:-translate-y-1 transition-all delay-300ms" href="#">About</a>
+          <a className="transform translate-y-0 hover:-translate-y-1 transition-all delay-300ms" href="#">Contact</a>
+          <button className="transform translate-y-0 hover:-translate-y-1 transition-all delay-300ms">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+            </svg>
+          </button>
         </div>
         <svg
           className="res-bar cursor-pointer hidden"
@@ -83,7 +88,7 @@ export default function Home() {
             >
               <Button
                 variant="outline"
-                className="flex items-center gap-2 text-base text-slate-100  bg-gradient-to-r from-purple-500 to-pink-500 hover:text-slate-300"
+                className="flex items-center gap-2 text-base text-slate-100  bg-gradient-to-r from-purple-500 to-pink-500 hover:text-slate-300 transform translate-y-0 hover:-translate-y-1 transition-all delay-300ms"
               >
                 Linked
                 <svg
@@ -103,7 +108,7 @@ export default function Home() {
             <a target="_blank" href="https://github.com/asjerab">
               <Button
                 variant="outline"
-                className="flex items-center gap-2 text-base text-slate-100  bg-gradient-to-r from-violet-500 to-fuchsia-500 hover:text-slate-300"
+                className="flex items-center gap-2 text-base text-slate-100  bg-gradient-to-r from-violet-500 to-fuchsia-500 hover:text-slate-300 transform translate-y-0 hover:-translate-y-1 transition-all delay-300ms"
               >
                 Github
                 <svg
@@ -125,8 +130,8 @@ export default function Home() {
           <div className="h-[300px] flex items-center">
             <a href="#work-link">
               <img
-                className="cursor-pointer"
-                src={downImg.src}
+                className="cursor-pointer transform translate-y-0 hover:-translate-y-1 transition-all delay-300ms"
+                src={downImgTwo.src}
                 alt="Down Image"
               />
             </a>
@@ -138,66 +143,62 @@ export default function Home() {
         <h1 className="work-title bauziet-regular text">
           Explore my past projects and uncover the magic of front-end.
         </h1>
-        <button className="bauziet-regular work-filter rounded-xl gap-3 flex items-center p-5 border-2 border-slate-200 hover:text-slate-950 hover:bg-slate-100 my-3">
-          {" "}
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-          >
-            <path
-              d="M12 3C14.755 3 17.455 3.232 20.083 3.678C20.616 3.768 21 4.234 21 4.774V5.818C21 6.11348 20.9418 6.40606 20.8287 6.67904C20.7157 6.95203 20.5499 7.20007 20.341 7.409L14.909 12.841C14.7001 13.0499 14.5343 13.298 14.4213 13.571C14.3082 13.8439 14.25 14.1365 14.25 14.432V17.359C14.2501 17.777 14.1337 18.1867 13.914 18.5423C13.6943 18.8978 13.3799 19.1851 13.006 19.372L9.75 21V14.432C9.75 14.1365 9.69181 13.8439 9.57874 13.571C9.46566 13.298 9.29993 13.0499 9.091 12.841L3.659 7.409C3.45007 7.20007 3.28434 6.95203 3.17126 6.67904C3.05819 6.40606 3 6.11348 3 5.818V4.774C3 4.234 3.384 3.768 3.917 3.678C6.58757 3.22586 9.29143 2.99906 12 3Z"
-              stroke="black"
-              stroke-width="1.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-          Filter
-        </button>
       </div>
       <div>
         <div>
-          <Accordion type="single" collapsible>
+          <Accordion type="single" collapsible className="accordion-wrapper">
             <AccordionItem value="item-1">
-              <AccordionTrigger>
+              <AccordionTrigger className="accordion-project-name">
                 Project name
               </AccordionTrigger>
-              <AccordionContent>
+              <AccordionContent className="accordion-p-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                 auctor egestas urna sit amet euismod. Donec consequat lorem at
-                elit sagittis interdum. <br />
-                <Button variant="outline" className="my-5">
-                  View
-                </Button>
+                elit sagittis interdum.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                auctor egestas urna sit amet euismod. Donec consequat lorem at
+                elit sagittis interdum.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                auctor egestas urna sit amet euismod. Donec consequat lorem at
+                elit sagittis interdum.
+                <br />
+                <Button variant="outline" className="my-6">View</Button>
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">
-              <AccordionTrigger>
+              <AccordionTrigger className="accordion-project-name">
                 Project name
               </AccordionTrigger>
-              <AccordionContent>
+              <AccordionContent className="accordion-p-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                 auctor egestas urna sit amet euismod. Donec consequat lorem at
                 elit sagittis interdum.
-                <Button variant="outline">
-                  View
-                </Button>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                auctor egestas urna sit amet euismod. Donec consequat lorem at
+                elit sagittis interdum.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                auctor egestas urna sit amet euismod. Donec consequat lorem at
+                elit sagittis interdum.
+                <br />
+                <Button variant="outline" className="my-6">View</Button>
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3">
-              <AccordionTrigger>
+              <AccordionTrigger className="accordion-project-name">
                 Project name
               </AccordionTrigger>
-              <AccordionContent>
+              <AccordionContent className="accordion-p-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                 auctor egestas urna sit amet euismod. Donec consequat lorem at
                 elit sagittis interdum.
-                <Button variant="outline" className="my-5">
-                  View
-                </Button>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                auctor egestas urna sit amet euismod. Donec consequat lorem at
+                elit sagittis interdum.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                auctor egestas urna sit amet euismod. Donec consequat lorem at
+                elit sagittis interdum.
+                <br />
+                <Button variant="outline" className="my-6">View</Button>
               </AccordionContent>
             </AccordionItem>
           </Accordion>

@@ -45,6 +45,10 @@ html {
   font-size: clamp(12px, 2vw, 20px);
 }
 
+.work-title {
+  font-size: clamp(18px, 5vw, 36px);
+}
+
 .work-wrapper {
   width: 100%;
   max-width: 739px;
@@ -53,15 +57,23 @@ html {
 
 
 
-.work-filter {
-    font-size: clamp(12px, 2vw, 16px);
+.accordion-wrapper {
+  padding-left: clamp(1px, 5vw, 64px);
+  padding-right: clamp(1px, 5vw, 64px);
 }
 
-.accordian-wrapper {
-  width: 100%;
-  max-width: 739px;
-  padding: clamp(10px, 6vw, 64px);
+.accordion-project-name {
+  font-size: clamp(18px, 2vw, 36px);
 }
+
+.accordion-p-text {
+  font-size: clamp(14px, 2vw, 18px);
+  width: 100%;
+  min-width: 300px;
+  max-width: 1000px;
+}
+
+
 
 @media screen and (max-width: 768px) {
   .res-bar {
@@ -70,5 +82,11 @@ html {
 
   .links-nav {
     display: none;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .downImgTwo {
+    display: block;
   }
 }
