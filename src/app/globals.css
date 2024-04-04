@@ -13,12 +13,20 @@
 }
 
 @font-face {
-  font-family: Bauziet-regular;
+  font-family: Bauziet-bold;
   src: url(../fonts/Bauziet\ Norm\ Bold.ttf);
 }
 
 .bauziet-regular {
   font-family: Bauziet-regular;
+}
+
+.bauziet-bold {
+  font-family: Bauziet-bold;
+}
+
+.bauziet-light {
+  font-family: Bauziet-light;
 }
 
 @layer base {
