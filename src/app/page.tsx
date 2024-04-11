@@ -1,20 +1,33 @@
-import react from 'react'
+import React, { useEffect, useState } from 'react';
 import { Button } from "@/components/ui/button";
 import downImgTwo from "@/images/down-img-two.png";
 import Accordion from "@/app/accordion";
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 import "./style.css";
+
+
+
 
 
 export default function Home() {
   return (
     <main className="">
+      <div style={{ position: 'fixed', bottom: 5, right: 5, margin: 10 }}>
+        <Alert>
+          <AlertTitle>Socials!</AlertTitle>
+          <AlertDescription>
+            Remeber to check out my socials via the buttons at the top.
+          </AlertDescription>
+        </Alert>
+      </div>
+
       <div className="flex justify-between items-center w-full py-12 p-5 sm:p-12 xl:p-16">
         <h1 className="bauziet-regular text-slate-950 text-3xl font-normal">
           asjer bereket
         </h1>
         <div className="links-nav bauziet-regular text-lg flex gap-5">
           <a className="transform translate-y-0 hover:-translate-y-1 transition-all delay-300ms" href="#work-link">Work</a>
-          <a className="transform translate-y-0 hover:-translate-y-1 transition-all delay-300ms" href="#">About</a>
+          <a className="transform translate-y-0 hover:-translate-y-1 transition-all delay-300ms" href="#aboutMeText">About</a>
           <a className="transform translate-y-0 hover:-translate-y-1 transition-all delay-300ms" href="#">Contact</a>
           <button className="transform translate-y-0 hover:-translate-y-1 transition-all delay-300ms">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
@@ -40,7 +53,7 @@ export default function Home() {
         </svg>
       </div>
 
-      <div className="hero-text-wrapper flex items-center h-[850px]">
+      <div className="hero-text-wrapper flex justify-center items-center h-[850px] w-full text-center">
         <div className="w-[1073px]">
           <h1 className="hero-big-text bauziet-regular my-3">
             Eager, Fresh, and Hungry to Learn: Your Next Front-End Buddy.
@@ -51,7 +64,7 @@ export default function Home() {
             sagittis interdum.
           </p>
 
-          <div className="flex gap-3 my-3">
+          <div className="flex justify-center gap-3 my-3 ">
             <a
               target="_blank"
               href="https://www.linkedin.com/in/asjer-bereket-343a8b28b/"
@@ -97,7 +110,7 @@ export default function Home() {
             </a>
           </div>
 
-          <div className="h-[300px] flex items-center">
+          <div className="h-[300px] flex items-center justify-center">
             <a href="#work-link">
               <img
                 className="cursor-pointer transform translate-y-0 hover:-translate-y-1 transition-all delay-300ms"
